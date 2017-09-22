@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CB8643B1F748E8800244A5F /* FullGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB8643A1F748E8800244A5F /* FullGame.swift */; };
+		1CB8643D1F748E9F00244A5F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB8643C1F748E9F00244A5F /* Event.swift */; };
+		1CB8643F1F7491D400244A5F /* GameRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB8643E1F7491D400244A5F /* GameRound.swift */; };
+		1CB864411F74928700244A5F /* Events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CB864401F74928700244A5F /* Events.plist */; };
+		1CB864431F749C6200244A5F /* Converters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB864421F749C6200244A5F /* Converters.swift */; };
 		1CC135671F7082AB00DE7A4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC135661F7082AB00DE7A4D /* AppDelegate.swift */; };
 		1CC135691F7082AB00DE7A4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC135681F7082AB00DE7A4D /* ViewController.swift */; };
 		1CC1356C1F7082AB00DE7A4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC1356A1F7082AB00DE7A4D /* Main.storyboard */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CB8643A1F748E8800244A5F /* FullGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullGame.swift; sourceTree = "<group>"; };
+		1CB8643C1F748E9F00244A5F /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		1CB8643E1F7491D400244A5F /* GameRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRound.swift; sourceTree = "<group>"; };
+		1CB864401F74928700244A5F /* Events.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Events.plist; sourceTree = "<group>"; };
+		1CB864421F749C6200244A5F /* Converters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Converters.swift; sourceTree = "<group>"; };
 		1CC135631F7082AB00DE7A4D /* Bout Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bout Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC135661F7082AB00DE7A4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CC135681F7082AB00DE7A4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +68,9 @@
 		1CC135651F7082AB00DE7A4D /* Bout Time */ = {
 			isa = PBXGroup;
 			children = (
+				1CB8643A1F748E8800244A5F /* FullGame.swift */,
+				1CB8643E1F7491D400244A5F /* GameRound.swift */,
+				1CB8643C1F748E9F00244A5F /* Event.swift */,
 				1CC135661F7082AB00DE7A4D /* AppDelegate.swift */,
 				1CC135681F7082AB00DE7A4D /* ViewController.swift */,
 				1CC135781F70845F00DE7A4D /* GameOverController.swift */,
@@ -65,7 +78,9 @@
 				1CC1356D1F7082AB00DE7A4D /* Assets.xcassets */,
 				1CC1356F1F7082AB00DE7A4D /* LaunchScreen.storyboard */,
 				1CC135721F7082AB00DE7A4D /* Info.plist */,
+				1CB864401F74928700244A5F /* Events.plist */,
 				1CC1357A1F70881E00DE7A4D /* WebViewController.swift */,
+				1CB864421F749C6200244A5F /* Converters.swift */,
 			);
 			path = "Bout Time";
 			sourceTree = "<group>";
@@ -132,6 +147,7 @@
 				1CC135711F7082AB00DE7A4D /* LaunchScreen.storyboard in Resources */,
 				1CC1356E1F7082AB00DE7A4D /* Assets.xcassets in Resources */,
 				1CC1356C1F7082AB00DE7A4D /* Main.storyboard in Resources */,
+				1CB864411F74928700244A5F /* Events.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,8 +159,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CC135691F7082AB00DE7A4D /* ViewController.swift in Sources */,
+				1CB8643B1F748E8800244A5F /* FullGame.swift in Sources */,
 				1CC135791F70845F00DE7A4D /* GameOverController.swift in Sources */,
+				1CB864431F749C6200244A5F /* Converters.swift in Sources */,
 				1CC135671F7082AB00DE7A4D /* AppDelegate.swift in Sources */,
+				1CB8643D1F748E9F00244A5F /* Event.swift in Sources */,
+				1CB8643F1F7491D400244A5F /* GameRound.swift in Sources */,
 				1CC1357B1F70881E00DE7A4D /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +327,7 @@
 				1CC135771F7082AB00DE7A4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

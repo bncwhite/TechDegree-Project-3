@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>event1</key>
+	<dict>
+		<key>description</key>
+		<string>Steve Jobs reveals the iPhone</string>
+		<key>year</key>
+		<integer>2007</integer>
+	</dict>
+	<key>event2</key>
+	<dict>
+		<key>description</key>
+		<string>Nintendo releases the indigo-purple Gamecube</string>
+		<key>year</key>
+		<real>2001</real>
+	</dict>
+	<key>event3</key>
+	<dict>
+		<key>description</key>
+		<string>Lost premieres on ABC</string>
+		<key>year</key>
+		<real>2004</real>
+	</dict>
+	<key>event4</key>
+	<dict>
+		<key>description</key>
+		<string>Star Trek: Enterprise finale aired</string>
+		<key>year</key>
+		<integer>2005</integer>
+	</dict>
+	<key>event5</key>
+	<dict>
+		<key>description</key>
+		<string>Ocean&apos;s Twelve debuts in theaters</string>
+		<key>year</key>
+		<integer>2004</integer>
+	</dict>
+	<key>event6</key>
+	<dict>
+		<key>description</key>
+		<string>Netflix opens for business</string>
+		<key>year</key>
+		<integer>1997</integer>
+	</dict>
+	<key>event7</key>
+	<dict>
+		<key>description</key>
+		<string>Mighty Morphin Power Rangers debuts on Fox Kids network</string>
+		<key>year</key>
+		<integer>1993</integer>
+	</dict>
+	<key>event8</key>
+	<dict>
+		<key>description</key>
+		<string>The first season of Survivor airs</string>
+		<key>year</key>
+		<integer>2000</integer>
+	</dict>
+	<key>event9</key>
+	<dict>
+		<key>description</key>
+		<string>Pokemon Ruby and Sapphire arrive on the Game Boy Advance</string>
+		<key>year</key>
+		<integer>2002</integer>
+	</dict>
+	<key>event10</key>
+	<dict>
+		<key>description</key>
+		<string>Apple reveals the iPad to the world</string>
+		<key>year</key>
+		<real>2010</real>
+	</dict>
+</dict>
+</plist>
