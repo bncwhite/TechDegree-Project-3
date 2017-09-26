@@ -40,6 +40,7 @@ enum EventNumber : String {
 struct Event {
     var description : String
     var year : Int
+    //var url: String
 }
 
 

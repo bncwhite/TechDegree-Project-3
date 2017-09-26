@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         eventLabels = [eventOneLabel, eventTwoLabel, eventThreeLabel, eventFourLabel]
         
         newGame()
+        updateEventLabels()
         
         for view in eventViews {
             view.layer.cornerRadius = 5
@@ -49,10 +50,6 @@ class ViewController: UIViewController {
         //eventOneLabel.addGestureRecognizer(tap)
         
     }
-    
-    func changeLabel() {
-        eventOneLabel.text = "Ta-da!"
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -61,7 +58,10 @@ class ViewController: UIViewController {
     
     func newGame() {
         game = FullGame()
-        game.newRound()
+        //game.newRound()
+    }
+    
+    func updateEventLabels() {
         
         var index = 0
         
@@ -69,9 +69,25 @@ class ViewController: UIViewController {
             eventLabels[index].text = event.description
             index += 1
         }
-        
     }
+    
+    @IBAction func increaseEventIndex(_ sender: UIButton) {
+        
+        if let eventView = sender.superview, let index = eventViews.index(of: eventView) {
+            let event = game.round.events.remove(at: index)
+            game.round.events.insert(event, at: index + 1)
+        }
+        
+        updateEventLabels()
+    }
+    @IBAction func decreaseEventIndex(_ sender: UIButton) {
+        
+        if let eventView = sender.superview, let index = eventViews.index(of: eventView) {
+            let event = game.round.events.remove(at: index)
+            game.round.events.insert(event, at: index - 1)
+        }
 
-
+        updateEventLabels()
+    }
 }
 

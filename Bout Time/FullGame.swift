@@ -29,9 +29,6 @@ class FullGame {
         }
     }
     
-    func newRound() {
-        round = GameRound(from: events)
-    }
     init() {
         
         do {
@@ -40,7 +37,36 @@ class FullGame {
             
         }
         newRound()
+    }
+    
+    func newRound() {
+        round = GameRound(from: events)
+    }
+    
+    func endGame() {
         
     }
     
+    func correctAnswerDetected() {
+        correctRounds += 1
+        totalRounds += 1
+        totalRounds == 6 ? self.newRound() : self.endGame()
+    }
+    
+    func wrongAnswerDetected() {
+        totalRounds += 1
+        totalRounds == 6 ? self.newRound() : self.endGame()
+    }
+    
+    func checkAnswers() {
+        
+        var previousYear = 0
+        
+        for event in self.round.events {
+            guard previousYear < event.year else { self.wrongAnswerDetected(); return}
+            previousYear = event.year
+        }
+        
+        self.correctAnswerDetected()
+    }
 }

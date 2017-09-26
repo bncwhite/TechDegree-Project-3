@@ -14,7 +14,7 @@ class GameRound {
     let amountOfEvents = 4
     var randomIndexes: [Int] = []
     
-    init(){}
+    //init(){}
     
     init(from events: [EventNumber : Event]) {
         
@@ -25,7 +25,6 @@ class GameRound {
             if let eventNumber = EventNumber(rawValue: "event\(number)"), let event = events[eventNumber] {
                 self.events.append(event)
             }
-
         }
     }
     
@@ -37,7 +36,6 @@ class GameRound {
             if !randomIndexes.contains(randomNumber) {
                 randomIndexes.append(randomNumber)
             }
-
         }
     }
 }
