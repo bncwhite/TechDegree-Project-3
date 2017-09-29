@@ -2,75 +2,180 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>event0</key>
+	<dict>
+		<key>description</key>
+		<string>Super Mario Galaxy redefines what it means to be a Mario game</string>
+		<key>year</key>
+		<integer>2007</integer>
+	</dict>
 	<key>event1</key>
 	<dict>
 		<key>description</key>
-		<string>Steve Jobs reveals the iPhone</string>
+		<string>Nintendo releases the Gamecube and Gameboy Advanced</string>
 		<key>year</key>
-		<integer>2007</integer>
+		<real>2001</real>
 	</dict>
 	<key>event2</key>
 	<dict>
 		<key>description</key>
-		<string>Nintendo releases the indigo-purple Gamecube</string>
+		<string>Nintendo releases the Nintendo DS</string>
 		<key>year</key>
-		<real>2001</real>
+		<real>2004</real>
 	</dict>
 	<key>event3</key>
 	<dict>
 		<key>description</key>
-		<string>Lost premieres on ABC</string>
+		<string>Nintendogs gives players a virtual dog to take care of on the Nintendo DS</string>
 		<key>year</key>
-		<real>2004</real>
+		<integer>2005</integer>
 	</dict>
 	<key>event4</key>
 	<dict>
 		<key>description</key>
-		<string>Star Trek: Enterprise finale aired</string>
+		<string>Earthbound becomes a cult-hit in North America</string>
 		<key>year</key>
-		<integer>2005</integer>
+		<real>1995</real>
 	</dict>
 	<key>event5</key>
 	<dict>
 		<key>description</key>
-		<string>Ocean&apos;s Twelve debuts in theaters</string>
+		<string>Yoshi stars in his first game</string>
 		<key>year</key>
-		<integer>2004</integer>
+		<integer>1997</integer>
 	</dict>
 	<key>event6</key>
 	<dict>
 		<key>description</key>
-		<string>Netflix opens for business</string>
+		<string>Star Fox pushes the graphic limits on the SNES</string>
 		<key>year</key>
-		<integer>1997</integer>
+		<real>1993</real>
 	</dict>
 	<key>event7</key>
 	<dict>
 		<key>description</key>
-		<string>Mighty Morphin Power Rangers debuts on Fox Kids network</string>
+		<string>Rare releases Banjo-Tooie for the Nintendo 64</string>
 		<key>year</key>
-		<integer>1993</integer>
+		<real>2000</real>
 	</dict>
 	<key>event8</key>
-	<dict>
-		<key>description</key>
-		<string>The first season of Survivor airs</string>
-		<key>year</key>
-		<integer>2000</integer>
-	</dict>
-	<key>event9</key>
 	<dict>
 		<key>description</key>
 		<string>Pokemon Ruby and Sapphire arrive on the Game Boy Advance</string>
 		<key>year</key>
 		<integer>2002</integer>
 	</dict>
+	<key>event9</key>
+	<dict>
+		<key>description</key>
+		<string>The epic JRPG game, Xenoblade Chronicles, hits the Wii</string>
+		<key>year</key>
+		<real>2010</real>
+	</dict>
 	<key>event10</key>
 	<dict>
 		<key>description</key>
-		<string>Apple reveals the iPad to the world</string>
+		<string>Nintendo Entertainment System is released to the world</string>
 		<key>year</key>
-		<real>2010</real>
+		<integer>1985</integer>
+	</dict>
+	<key>event11</key>
+	<dict>
+		<key>description</key>
+		<string>The Super Nintendo Entertainment System hits the shelves</string>
+		<key>year</key>
+		<integer>1991</integer>
+	</dict>
+	<key>event12</key>
+	<dict>
+		<key>description</key>
+		<string>The Gameboy arrives for the world to play games on the go.</string>
+		<key>year</key>
+		<integer>1989</integer>
+	</dict>
+	<key>event13</key>
+	<dict>
+		<key>description</key>
+		<string>Nintendo releases the Nintendo 64</string>
+		<key>year</key>
+		<integer>1996</integer>
+	</dict>
+	<key>event14</key>
+	<dict>
+		<key>description</key>
+		<string>The Gameboy is upgraded and released as the Gameboy Color</string>
+		<key>year</key>
+		<real>1998</real>
+	</dict>
+	<key>event15</key>
+	<dict>
+		<key>description</key>
+		<string>The Nintendo Wii succeeds the Gamecube</string>
+		<key>year</key>
+		<real>2006</real>
+	</dict>
+	<key>event16</key>
+	<dict>
+		<key>description</key>
+		<string>Nintendo adds 3D to the Nintendo DS and releases it as the 3DS</string>
+		<key>year</key>
+		<real>2011</real>
+	</dict>
+	<key>event17</key>
+	<dict>
+		<key>description</key>
+		<string>Wii U replaces the Wii</string>
+		<key>year</key>
+		<real>2012</real>
+	</dict>
+	<key>event18</key>
+	<dict>
+		<key>description</key>
+		<string>The Nintendo Switch is a mega-hit for Nintendo</string>
+		<key>year</key>
+		<integer>2017</integer>
+	</dict>
+	<key>event19</key>
+	<dict>
+		<key>description</key>
+		<string>Nintendo legend, Satoru Iwata passes away</string>
+		<key>year</key>
+		<real>2015</real>
+	</dict>
+	<key>event20</key>
+	<dict>
+		<key>description</key>
+		<string>The very first The Legend of Zelda is released</string>
+		<key>year</key>
+		<integer>1987</integer>
+	</dict>
+	<key>event21</key>
+	<dict>
+		<key>description</key>
+		<string>Super Mario Kart hits the Super Nintendo</string>
+		<key>year</key>
+		<real>1992</real>
+	</dict>
+	<key>event22</key>
+	<dict>
+		<key>description</key>
+		<string>Donkey Kong Country redefines the Donkey Kong series</string>
+		<key>year</key>
+		<real>1994</real>
+	</dict>
+	<key>event23</key>
+	<dict>
+		<key>description</key>
+		<string>Samus Aran arrives with Metroid</string>
+		<key>year</key>
+		<integer>1986</integer>
+	</dict>
+	<key>event24</key>
+	<dict>
+		<key>description</key>
+		<string>Animal Crossing: City Folk arrives for the Nintendo Wii</string>
+		<key>year</key>
+		<real>2008</real>
 	</dict>
 </dict>
 </plist>

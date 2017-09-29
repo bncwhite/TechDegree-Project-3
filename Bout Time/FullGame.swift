@@ -14,6 +14,7 @@ class FullGame {
     var round : GameRound = GameRound()
     var correctRounds = 0
     var totalRounds = 0
+    var answeredCorrectly = true
 
     func createEventDictionary() throws {
         do {
@@ -30,12 +31,10 @@ class FullGame {
     }
     
     init() {
-        
         do {
             try createEventDictionary()
-        } catch {
-            
-        }
+        } catch {}
+        
         newRound()
     }
     
@@ -50,12 +49,14 @@ class FullGame {
     func correctAnswerDetected() {
         correctRounds += 1
         totalRounds += 1
-        totalRounds == 6 ? self.newRound() : self.endGame()
+        //totalRounds == 6 ? self.newRound() : self.endGame()
+        answeredCorrectly = true
     }
     
     func wrongAnswerDetected() {
         totalRounds += 1
-        totalRounds == 6 ? self.newRound() : self.endGame()
+        //totalRounds == 6 ? self.newRound() : self.endGame()
+        answeredCorrectly = false
     }
     
     func checkAnswers() {

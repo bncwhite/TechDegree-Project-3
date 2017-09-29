@@ -14,7 +14,7 @@ class GameRound {
     let amountOfEvents = 4
     var randomIndexes: [Int] = []
     
-    //init(){}
+    init(){}
     
     init(from events: [EventNumber : Event]) {
         

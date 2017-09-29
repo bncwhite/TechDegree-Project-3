@@ -19,13 +19,10 @@ class PlistConverter {
         guard let path = Bundle.main.path(forResource: name, ofType: type) else {
             throw PlistError.invalidPath
         }
-        
         guard let dictionary = NSDictionary(contentsOfFile: path) as? [String : AnyObject] else {
             throw PlistError.invalidDictionary
         }
-        
         return dictionary
-        
     }
 }
 
@@ -43,7 +40,6 @@ class DictionaryUnarchiver {
                 events.updateValue(event, forKey: eventKey)
             }
         }
-        
         return events
     }
 }

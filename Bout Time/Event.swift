@@ -9,6 +9,7 @@
 import Foundation
 
 enum EventNumber : String {
+    case event0
     case event1
     case event2
     case event3
