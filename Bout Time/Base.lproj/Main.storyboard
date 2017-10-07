@@ -197,11 +197,12 @@
                         <outlet property="infoLabel" destination="sll-Hi-bfv" id="JBq-su-W9d"/>
                         <outlet property="roundButton" destination="b0H-oE-eOG" id="tgy-Lb-WX8"/>
                         <outlet property="timerLabel" destination="6Ti-ch-Ont" id="TyL-TZ-RlC"/>
+                        <segue destination="ywJ-V6-iBG" kind="presentation" identifier="gameOver" id="XJg-Jy-9ln"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+            <point key="canvasLocation" x="50" y="36"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="KQd-MM-g7u">
@@ -231,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qaI-EP-qKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="781.60000000000002" y="35.532233883058474"/>
+            <point key="canvasLocation" x="801" y="-321"/>
         </scene>
         <!--Game Over Controller-->
         <scene sceneID="WmV-yM-A4U">
@@ -252,6 +253,9 @@
                                     <constraint firstAttribute="height" constant="47" id="PBC-Be-XQl"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="play_again"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="ywJ-V6-iBG" eventType="touchUpInside" id="XnV-Pv-lx3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4/6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdv-Ev-ABW">
                                 <rect key="frame" x="156.5" y="212" width="62.5" height="48"/>
@@ -282,6 +286,9 @@
                             <constraint firstItem="Ucy-Wc-h6A" firstAttribute="top" secondItem="gdv-Ev-ABW" secondAttribute="bottom" constant="50" id="to3-ua-GmF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scoreLbel" destination="gdv-Ev-ABW" id="Nyg-zt-lOy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tfc-bS-lJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,9 +9,12 @@
 import UIKit
 
 class GameOverController: UIViewController {
-
+    
+    var game : FullGame?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -21,7 +24,12 @@ class GameOverController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBOutlet weak var scoreLbel: UILabel!
+    
+    @IBAction func dismiss(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

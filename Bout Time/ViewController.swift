@@ -92,10 +92,21 @@ class ViewController: UIViewController {
         timerLabel.isHidden = true
         game.checkAnswers()
         
-        guard game.totalRounds != 6 else { game.endGame(); return }
+        guard game.totalRounds != 6 else {
+            game.endGame()
+            performSegue(withIdentifier: "gameOver", sender: nil)
+            return
+        }
         
         updateRoundButton()
         flipButtonsUsability()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let gameOverController = segue.destination as? GameOverController {
+            gameOverController.game = game
+        }
     }
     
     func updateRoundButton() {
