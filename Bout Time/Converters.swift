@@ -31,8 +31,8 @@ class DictionaryUnarchiver {
         var events: [EventNumber : Event] = [:]
         
         for (key, value) in dictionary {
-            if let eventDictionary = value as? [String : Any], let description = eventDictionary["description"] as? String, let year = eventDictionary["year"] as? Int {
-                let event = Event(description: description, year: year)
+            if let eventDictionary = value as? [String : Any], let description = eventDictionary["description"] as? String, let year = eventDictionary["year"] as? Int, let url = eventDictionary["url"] as? String {
+                let event = Event(description: description, year: year, url: url)
                 guard let eventKey = EventNumber(rawValue: key) else {
                     throw PlistError.invalidEvent
                 }

@@ -14,6 +14,7 @@ class FullGame {
     var round : GameRound = GameRound()
     var correctRounds = 0
     var totalRounds = 0
+    let numberOfRounds = 6
     var answeredCorrectly = true
 
     func createEventDictionary() throws {

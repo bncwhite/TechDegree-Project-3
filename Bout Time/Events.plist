@@ -8,13 +8,17 @@
 		<string>Super Mario Galaxy redefines what it means to be a Mario game</string>
 		<key>year</key>
 		<integer>2007</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Super_Mario_Galaxy</string>
 	</dict>
 	<key>event1</key>
 	<dict>
 		<key>description</key>
-		<string>Nintendo releases the Gamecube and Gameboy Advanced</string>
+		<string>Nintendo releases the Gamecube</string>
 		<key>year</key>
 		<real>2001</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/GameCube</string>
 	</dict>
 	<key>event2</key>
 	<dict>
@@ -22,6 +26,8 @@
 		<string>Nintendo releases the Nintendo DS</string>
 		<key>year</key>
 		<real>2004</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Nintendo_DS</string>
 	</dict>
 	<key>event3</key>
 	<dict>
@@ -29,6 +35,8 @@
 		<string>Nintendogs gives players a virtual dog to take care of on the Nintendo DS</string>
 		<key>year</key>
 		<integer>2005</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Nintendogs</string>
 	</dict>
 	<key>event4</key>
 	<dict>
@@ -36,6 +44,8 @@
 		<string>Earthbound becomes a cult-hit in North America</string>
 		<key>year</key>
 		<real>1995</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/EarthBound</string>
 	</dict>
 	<key>event5</key>
 	<dict>
@@ -43,6 +53,8 @@
 		<string>Yoshi stars in his first game</string>
 		<key>year</key>
 		<integer>1997</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Yoshi%27s_Story</string>
 	</dict>
 	<key>event6</key>
 	<dict>
@@ -50,13 +62,17 @@
 		<string>Star Fox pushes the graphic limits on the SNES</string>
 		<key>year</key>
 		<real>1993</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Star_Fox</string>
 	</dict>
 	<key>event7</key>
 	<dict>
 		<key>description</key>
-		<string>Rare releases Banjo-Tooie for the Nintendo 64</string>
+		<string>Rare releases Banjo-Kazooie for the Nintendo 64</string>
 		<key>year</key>
 		<real>2000</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Banjo-Kazooie</string>
 	</dict>
 	<key>event8</key>
 	<dict>
@@ -64,6 +80,8 @@
 		<string>Pokemon Ruby and Sapphire arrive on the Game Boy Advance</string>
 		<key>year</key>
 		<integer>2002</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Pok%C3%A9mon_Ruby_and_Sapphire</string>
 	</dict>
 	<key>event9</key>
 	<dict>
@@ -71,6 +89,8 @@
 		<string>The epic JRPG game, Xenoblade Chronicles, hits the Wii</string>
 		<key>year</key>
 		<real>2010</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Xenoblade_Chronicles</string>
 	</dict>
 	<key>event10</key>
 	<dict>
@@ -78,6 +98,8 @@
 		<string>Nintendo Entertainment System is released to the world</string>
 		<key>year</key>
 		<integer>1985</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Nintendo_Entertainment_System</string>
 	</dict>
 	<key>event11</key>
 	<dict>
@@ -85,6 +107,8 @@
 		<string>The Super Nintendo Entertainment System hits the shelves</string>
 		<key>year</key>
 		<integer>1991</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System</string>
 	</dict>
 	<key>event12</key>
 	<dict>
@@ -92,6 +116,8 @@
 		<string>The Gameboy arrives for the world to play games on the go.</string>
 		<key>year</key>
 		<integer>1989</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Game_Boy</string>
 	</dict>
 	<key>event13</key>
 	<dict>
@@ -99,6 +125,8 @@
 		<string>Nintendo releases the Nintendo 64</string>
 		<key>year</key>
 		<integer>1996</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Nintendo_64</string>
 	</dict>
 	<key>event14</key>
 	<dict>
@@ -106,6 +134,8 @@
 		<string>The Gameboy is upgraded and released as the Gameboy Color</string>
 		<key>year</key>
 		<real>1998</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Game_Boy_Color</string>
 	</dict>
 	<key>event15</key>
 	<dict>
@@ -113,6 +143,8 @@
 		<string>The Nintendo Wii succeeds the Gamecube</string>
 		<key>year</key>
 		<real>2006</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Wii</string>
 	</dict>
 	<key>event16</key>
 	<dict>
@@ -120,6 +152,8 @@
 		<string>Nintendo adds 3D to the Nintendo DS and releases it as the 3DS</string>
 		<key>year</key>
 		<real>2011</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Nintendo_3DS</string>
 	</dict>
 	<key>event17</key>
 	<dict>
@@ -127,6 +161,8 @@
 		<string>Wii U replaces the Wii</string>
 		<key>year</key>
 		<real>2012</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Wii_U</string>
 	</dict>
 	<key>event18</key>
 	<dict>
@@ -134,6 +170,8 @@
 		<string>The Nintendo Switch is a mega-hit for Nintendo</string>
 		<key>year</key>
 		<integer>2017</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Nintendo_Switch</string>
 	</dict>
 	<key>event19</key>
 	<dict>
@@ -141,6 +179,8 @@
 		<string>Nintendo legend, Satoru Iwata passes away</string>
 		<key>year</key>
 		<real>2015</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Satoru_Iwata</string>
 	</dict>
 	<key>event20</key>
 	<dict>
@@ -148,6 +188,8 @@
 		<string>The very first The Legend of Zelda is released</string>
 		<key>year</key>
 		<integer>1987</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)</string>
 	</dict>
 	<key>event21</key>
 	<dict>
@@ -155,6 +197,8 @@
 		<string>Super Mario Kart hits the Super Nintendo</string>
 		<key>year</key>
 		<real>1992</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Super_Mario_Kart</string>
 	</dict>
 	<key>event22</key>
 	<dict>
@@ -162,6 +206,8 @@
 		<string>Donkey Kong Country redefines the Donkey Kong series</string>
 		<key>year</key>
 		<real>1994</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Donkey_Kong_Country</string>
 	</dict>
 	<key>event23</key>
 	<dict>
@@ -169,6 +215,8 @@
 		<string>Samus Aran arrives with Metroid</string>
 		<key>year</key>
 		<integer>1986</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Metroid_(video_game)</string>
 	</dict>
 	<key>event24</key>
 	<dict>
@@ -176,6 +224,8 @@
 		<string>Animal Crossing: City Folk arrives for the Nintendo Wii</string>
 		<key>year</key>
 		<real>2008</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Animal_Crossing:_City_Folk</string>
 	</dict>
 </dict>
 </plist>

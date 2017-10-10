@@ -1,5 +1,5 @@
 //
-//  GameOverController.swift
+//  WebViewController.swift
 //  Bout Time
 //
 //  Created by Bradley White on 9/18/17.
@@ -7,15 +7,15 @@
 //
 
 import UIKit
+import WebKit
 
-class GameOverController: UIViewController {
+class WebViewController: UIViewController {
     
-    var game : FullGame?
+    var eventURL: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
+        loadUrl()
         // Do any additional setup after loading the view.
     }
 
@@ -24,11 +24,18 @@ class GameOverController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var scoreLbel: UILabel!
-    
+    func loadUrl() {
+        if let url: String = eventURL {
+            let myURL = URL(string: url)
+            let myRequest = URLRequest(url: myURL!)
+            webView.load(myRequest)
+        }
+    }
     @IBAction func dismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBOutlet weak var webView: WKWebView!
     
     /*
     // MARK: - Navigation

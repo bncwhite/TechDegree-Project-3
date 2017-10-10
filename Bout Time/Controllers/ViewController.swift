@@ -50,16 +50,39 @@ class ViewController: UIViewController {
         eventLabels = [eventOneLabel, eventTwoLabel, eventThreeLabel, eventFourLabel]
         eventButtons = [eventOneDown, eventTwoUp, eventTwoDown, eventThreeUp, eventThreeDown, eventFourUp]
         
-        newGame()
-        newRound()
+        startNewGame()
+        modifyLabelGuestures()
         
         for view in eventViews {
             view.layer.cornerRadius = 5
+            
         }
-        
-        //let tap = UITapGestureRecognizer(target: self, action: #selector(changeLabel))
-        //eventOneLabel.addGestureRecognizer(tap)
-        
+    }
+    
+    func startNewGame()
+    {
+        newGame()
+        newRound()
+    }
+    
+    func modifyLabelGuestures() {
+        for label in eventLabels {
+            
+            //Ensure only one guesture exists for the label
+            label.gestureRecognizers?.removeAll()
+            let tap = UITapGestureRecognizer(target: self, action: #selector(showWebInfo(sender:)))
+            
+            if let index: Int = eventLabels.index(of: label) {
+                //Quick and dirty shortcut to pass the url to the webView later
+                tap.name = game.round.events[index].url
+            }
+            
+            label.addGestureRecognizer(tap)
+        }
+    }
+    
+    @objc func showWebInfo(sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "webInfo", sender: sender)
     }
 
     override func didReceiveMemoryWarning() {
@@ -92,20 +115,24 @@ class ViewController: UIViewController {
         timerLabel.isHidden = true
         game.checkAnswers()
         
-        guard game.totalRounds != 6 else {
-            game.endGame()
-            performSegue(withIdentifier: "gameOver", sender: nil)
-            return
-        }
+        
         
         updateRoundButton()
-        flipButtonsUsability()
+        flipButtonUsability()
+        flipLabelUsability()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let gameOverController = segue.destination as? GameOverController {
+            gameOverController.originController = self
             gameOverController.game = game
+        }
+        
+        if let webViewController = segue.destination as? WebViewController, let tap = sender as? UITapGestureRecognizer {
+            
+            let url = tap.name
+            webViewController.eventURL = url
         }
     }
     
@@ -115,9 +142,15 @@ class ViewController: UIViewController {
         roundButton.isHidden = false
     }
     
-    func flipButtonsUsability() {
+    func flipButtonUsability() {
         for button in eventButtons {
             button.isEnabled = !button.isEnabled
+        }
+    }
+    
+    func flipLabelUsability() {
+        for label in eventLabels {
+            label.isUserInteractionEnabled = !label.isUserInteractionEnabled
         }
     }
     
@@ -142,6 +175,7 @@ class ViewController: UIViewController {
             eventLabels[index].text = event.description
             index += 1
         }
+        modifyLabelGuestures()
     }
     
     @IBAction func increaseEventIndex(_ sender: UIButton) {
@@ -162,12 +196,22 @@ class ViewController: UIViewController {
     }
     
     @IBAction func newRound() {
+        
+        guard game.totalRounds != game.numberOfRounds else {
+            game.endGame()
+            performSegue(withIdentifier: "gameOver", sender: nil)
+            return
+        }
+        
+        startTimer()
         roundButton.isHidden = true
         game.newRound()
         updateEventLabels()
-        game.totalRounds != 0 ? flipButtonsUsability() : nil
-        startTimer()
+        modifyLabelGuestures()
+        flipButtonUsability()
+        flipLabelUsability()
+        //game.totalRounds != 0 ? flipButtonUsability() : nil
+        //game.totalRounds != 0 ? flipLabelUsability() : nil
     }
-    
 }
 

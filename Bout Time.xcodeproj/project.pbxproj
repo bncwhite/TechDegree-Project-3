@@ -49,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C1B72E31F887F03007ECE6E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1CC135681F7082AB00DE7A4D /* ViewController.swift */,
+				1CC1357A1F70881E00DE7A4D /* WebViewController.swift */,
+				1CC135781F70845F00DE7A4D /* GameOverController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		1CC1355A1F7082AB00DE7A4D = {
 			isa = PBXGroup;
 			children = (
@@ -68,21 +78,27 @@
 		1CC135651F7082AB00DE7A4D /* Bout Time */ = {
 			isa = PBXGroup;
 			children = (
-				1CB8643A1F748E8800244A5F /* FullGame.swift */,
-				1CB8643E1F7491D400244A5F /* GameRound.swift */,
-				1CB8643C1F748E9F00244A5F /* Event.swift */,
+				1CD9E12F1F8AE1C900C7B39E /* Model */,
+				1C1B72E31F887F03007ECE6E /* Controllers */,
 				1CC135661F7082AB00DE7A4D /* AppDelegate.swift */,
-				1CC135681F7082AB00DE7A4D /* ViewController.swift */,
-				1CC135781F70845F00DE7A4D /* GameOverController.swift */,
 				1CC1356A1F7082AB00DE7A4D /* Main.storyboard */,
 				1CC1356D1F7082AB00DE7A4D /* Assets.xcassets */,
 				1CC1356F1F7082AB00DE7A4D /* LaunchScreen.storyboard */,
 				1CC135721F7082AB00DE7A4D /* Info.plist */,
 				1CB864401F74928700244A5F /* Events.plist */,
-				1CC1357A1F70881E00DE7A4D /* WebViewController.swift */,
 				1CB864421F749C6200244A5F /* Converters.swift */,
 			);
 			path = "Bout Time";
+			sourceTree = "<group>";
+		};
+		1CD9E12F1F8AE1C900C7B39E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CB8643A1F748E8800244A5F /* FullGame.swift */,
+				1CB8643E1F7491D400244A5F /* GameRound.swift */,
+				1CB8643C1F748E9F00244A5F /* Event.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
